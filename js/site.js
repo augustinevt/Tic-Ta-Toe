@@ -11,9 +11,12 @@ $(function() {
   $('#playTheGame').click(function() {
     $('#playTheGame').remove();
     $('#theGame').fadeIn();
-  })
+  });
   $('#colorChanger').click(function() {
     // alert("main coon");
     $('body').toggleClass('invert');
-  })
+  });
+  $('#instructions').click(function() {
+    $(this).toggleClass('boxy');
+  });
 });

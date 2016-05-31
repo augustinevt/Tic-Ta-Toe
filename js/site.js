@@ -8,4 +8,12 @@ $(function() {
   $('#clearButton').click(function() {
     $('.ticBox span').remove();
   });
+  $('#playTheGame').click(function() {
+    $('#playTheGame').remove();
+    $('#theGame').fadeIn();
+  })
+  $('#colorChanger').click(function() {
+    // alert("main coon");
+    $('body').toggleClass('invert');
+  })
 });
